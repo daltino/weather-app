@@ -1,0 +1,73 @@
+weather{
+	flex:1
+}
+
+.weather h2 {
+	font-size:1.2em;
+}
+.weather dl {
+	margin-bottom:14px;
+}
+.weather dt {
+	display:none;
+}
+.weather .popover-content {
+	width:250px;
+}
+.weather .popover-content dt {
+	display:block;
+	width:auto;
+	margin-right:1em;
+}
+.weather dd {
+	margin-left:0;
+}
+.weather-sml {
+	text-align: left
+}
+.weather-sml h2 {
+	font-size:1.5em;
+	text-align:left;
+}
+.weather-sml h3 {
+	font-size:1.1em;
+}
+.weather-sml p {
+	margin-top:10px;
+	font-size:80%;
+}
+
+/* WEATHER STATE */
+.state-icon-graph, .state-icon-tiny, .state-icon-sml, .state-icon-lrg {
+	display:inline-block;
+}
+.state-icon-graph {
+	width:24px;
+	height:24px;
+}
+.state-icon-tiny {
+	width:1em;
+	height:1em;
+	margin-right:2px;
+}
+.state-icon-sml {
+	width:32px;
+	height:32px;
+	margin:0 5px 0 0;
+}
+.state-icon-lrg {
+	width:50px;
+	height:50px;
+	margin:0 5px 0 0;
+}
+
+.state-sn {background:url("/assets/weather-icons/sn.svg")}
+.state-sl {background:url("/assets/weather-icons/sl.svg")}
+.state-h {background:url("/assets/weather-icons/h.svg")}
+.state-t {background:url("/assets/weather-icons/t.svg")}
+.state-hr {background:url("/assets/weather-icons/hr.svg")}
+.state-lr {background:url("/assets/weather-icons/lr.svg")}
+.state-s {background:url("/assets/weather-icons/s.svg")}
+.state-hc {background:url("/assets/weather-icons/hc.svg")}
+.state-lc {background:url("/assets/weather-icons/lc.svg")}
+.state-c {background:url("/assets/weather-icons/c.svg")}

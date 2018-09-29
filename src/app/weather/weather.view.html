@@ -1,0 +1,25 @@
+<div ng-if="vmw.weather_loaded" class="">
+	<h2>
+		<a href="">
+			{{ vmw.city_name }}
+		</a>
+	</h2>
+	<dl>
+		<dt>Weather</dt>
+		<dd class="weatherstate" data-title="Forecasts" data-original-title="" title="">
+			<div class="state-icon-lrg" ng-class="vmw.today_weather_data.weather_state_abbr"></div>
+			<span class="hidden-xs hidden-sm">Heavy Rain</span>
+		</dd>
+		<dt>Temperature</dt>
+		<dd>
+			Temp: {{ vmw.today_weather_data.the_temp | number:2 }}°C
+			<br/>
+			Max: {{ vmw.today_weather_data.max_temp | number:2 }}°C
+			<br/>
+			Min: {{ vmw.today_weather_data.max_temp | number:2 }}°C
+		</dd>
+	</dl>
+</div>
+<div ng-if="!vmw.weather_loaded" class="col-lg-2 col-md-2 col-sm-2 col-xs-4 ">
+	Loading {{ vmw.weather.city_name }} weather...
+</div>

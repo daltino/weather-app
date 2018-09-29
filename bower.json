@@ -1,0 +1,62 @@
+{
+  "name": "weather-app",
+  "description": "An AngularJS weather application that pulls JSON based metadata from https://www.metaweather.com.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://daltino09@bitbucket.org/daltino09/weather-app.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-locales",
+    "angularjs",
+    "autoprefixer",
+    "babel",
+    "boilerplate",
+    "bower",
+    "browsersync",
+    "concatenation",
+    "es2015",
+    "es6",
+    "eslint",
+    "esnext",
+    "gulp",
+    "i18n",
+    "internationalization",
+    "l10n",
+    "lint",
+    "localization",
+    "minimisation",
+    "sass",
+    "seed",
+    "skeleton",
+    "sourcemaps",
+    "uglification",
+    "ugify",
+    "watch"
+  ],
+  "authors": [
+    "Dalton Whyte <daltino07@gmail.com> (daltonwhyte.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://daltino09@bitbucket.org/daltino09/weather-app",
+  "dependencies": {
+    "angular": "^1.7.3",
+    "angular-dynamic-locale": "^0.1.37",
+    "angular-i18n": "^1.7.3",
+    "angular-translate": "^2.18.1",
+    "angular-translate-handler-log": "^2.18.1",
+    "angular-translate-loader-static-files": "^2.18.1",
+    "angular-ui-router": "^1.0.19",
+    "normalize-css": "^8.0.0",
+    "bootstrap": "^4.1.3",
+    "angular-logger": "^1.4.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    }
+  }
+}

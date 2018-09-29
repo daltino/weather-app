@@ -23,7 +23,7 @@ npm install -g bower gulp-cli
 Clone repository from GitHub:
 
 ```sh
-git clone https://daltino09@bitbucket.org/daltino09/weather-app.git
+git clone https://github.com/daltino/weather-app.git
 ```
 
 Jump into `weather-app` directory and install dependencies from npm registry:

@@ -9,9 +9,9 @@
       url: '/',
       component: 'home',
     })
-    .state('weather', {
-      url:'weather',
-      component:'weather'
+    .state('search', {
+      url:'/search/:keyword',
+      component:'search'
     });
 
     $urlRouterProvider.otherwise('/');

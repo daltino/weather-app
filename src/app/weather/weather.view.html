@@ -1,4 +1,5 @@
-<div ng-if="vmw.weather_loaded" class="">
+<!-- Start Show Weather Information if it is loaded -->
+<div ng-if="vmw.weather_loaded">
 	<h2>
 		<a href="">
 			{{ vmw.city_name }}
@@ -20,6 +21,18 @@
 		</dd>
 	</dl>
 </div>
-<div ng-if="!vmw.weather_loaded" class="col-lg-2 col-md-2 col-sm-2 col-xs-4 ">
-	Loading {{ vmw.weather.city_name }} weather...
+<!-- End Show Weather Information if it is loaded -->
+
+<!-- Start Show Loading Weather Information if it is not loaded -->
+<div ng-if="!vmw.weather_loaded">
+	<h2>
+		<a href="">
+			{{ vmw.weather.city_name }}
+		</a>
+	</h2>
+	<dl>
+		<dt>Weather</dt>
+	</dl>
+	<i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
 </div>
+<!-- End Show Loading Weather Information if it is not loaded -->

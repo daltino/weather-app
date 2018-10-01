@@ -1,6 +1,6 @@
 # Weather App
 
-An AngularJS weather application that pulls JSON based metadata from https://www.metaweather.com. It displays weather information for the following cities: Istanbul, Berlin, London, Helsinki, Dublin, Vancouver.
+An AngularJS weather application that pulls JSON formatted metadata from https://www.metaweather.com. It displays weather information for the following cities: Istanbul, Berlin, London, Helsinki, Dublin, Vancouver.
 
 It uses a component-based architecture, by defining a weather component that displays the following weather metadata information:
 

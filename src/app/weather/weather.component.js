@@ -14,10 +14,10 @@
   function WeatherController($log, $rootScope, $translate, weatherAPI) {
     const vmw = this;
     // Initialize logger object for custom logs
-    var logger = $log.getInstance('app.weather.WeatherController');
+    const logger = $log.getInstance('app.weather.WeatherController');
     
     // Initialize weather component variables
-    var weather_data = undefined;
+    const weather_data = undefined;
     vmw.weather_loaded = false;
 
     vmw.getWeatherDataByWOEID = getWeatherDataByWOEID;
@@ -38,7 +38,7 @@
       weather_data
       .then(function(data){
         // Uncomment this to view the weather metadata
-        // logger.debug("Weather data for ", data.data.title, ": ", data.data);
+        logger.debug("Weather data for ", data.data.title, ": ", data.data);
 
         vmw.weather_loaded = true;
         vmw.city_name = data.data.title;

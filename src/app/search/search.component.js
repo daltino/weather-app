@@ -3,19 +3,23 @@
 
   angular.module('app').component('search', {
     controller: SearchController,
-    controllerAs: 'vmw',
+    controllerAs: 'vmws',
     templateUrl: 'app/search/search.view.html',
   });
 
   /** @ngInject */
-  function SearchController($log, $rootScope, $translate) {
-    const vmw = this;
+  function SearchController($log, $rootScope, $translate, $stateParams) {
+    const vmws = this;
+    vmws.stateParams = {};
+    vmws.stateParams.keyword = $stateParams.keyword;
+
     // Initialize logger object for custom logs
-    var logger = $log.getInstance('app.search.SearchController');
+    const logger = $log.getInstance('app.search.SearchController');
+    logger.info("Keyword: ",vmws.stateParams.keyword);
     
     // Call activate function on complete
     // initialization of search component
-    vmw.$onInit = function() {
+    vmws.$onInit = function() {
       activate();
     }
 

@@ -10,7 +10,7 @@
   /** @ngInject */
   function HomeController($log, $rootScope, $translate) {
     const vm = this;
-    var logger = $log.getInstance('app.home.HomeController');
+    const logger = $log.getInstance('app.home.HomeController');
 
     // Scope variables go here:
     vm.defaultCities = [
@@ -45,7 +45,7 @@
     activate();
 
     function activate() {
-      logger.debug('Home page loaded, getting weather data for default cities: ', Object.keys(vm.defaultCities));
+      logger.debug('Home page loaded, getting weather data for default cities: ', vm.defaultCities);
     }
 
     function switchLanguage(language) {

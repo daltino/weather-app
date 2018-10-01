@@ -9,6 +9,10 @@
       url: '/',
       component: 'home',
     })
+    .state('weather_details', {
+      url:'/weather/:woeid',
+      component:'weather_details'
+    })
     .state('search', {
       url:'/search/:keyword',
       component:'search'
